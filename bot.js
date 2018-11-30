@@ -259,12 +259,12 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
-${prefix}p ⇏ لتشغيل أغنية برآبط أو بأسم
-${prefix}sk ⇏ لتجآوز الأغنية الحآلية
-${prefix}st ⇏ إيقآف الأغنية مؤقتا
+${prefix}play ⇏ لتشغيل أغنية برآبط أو بأسم
+${prefix}skip ⇏ لتجآوز الأغنية الحآلية
+${prefix}stop ⇏ إيقآف الأغنية مؤقتا
 ${prefix}r ⇏ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}v ⇏ لتغيير درجة الصوت 100 - 0
-${prefix}l⇏ لإخرآج البوت من الروم
+${prefix}vol ⇏ لتغيير درجة الصوت 100 - 0
+${prefix}leave⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}q ⇏ لمعرفة قآئمة التشغيل
  `)
