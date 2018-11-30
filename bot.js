@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("اكتب اي شي",{type: 'WATCHING'})
+   client.user.setActivity("احسن بوت اغاني في العالم",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "البرفكس" 
+var prefix = "/" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -259,14 +259,14 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
-${prefix}play ⇏ لتشغيل أغنية برآبط أو بأسم
-${prefix}skip ⇏ لتجآوز الأغنية الحآلية
-${prefix}stop ⇏ إيقآف الأغنية مؤقتا
-${prefix}resume ⇏ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-${prefix}vol ⇏ لتغيير درجة الصوت 100 - 0
-${prefix}leave⇏ لإخرآج البوت من الروم
+${prefix}p ⇏ لتشغيل أغنية برآبط أو بأسم
+${prefix}sk ⇏ لتجآوز الأغنية الحآلية
+${prefix}st ⇏ إيقآف الأغنية مؤقتا
+${prefix}r ⇏ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
+${prefix}v ⇏ لتغيير درجة الصوت 100 - 0
+${prefix}l⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
-${prefix}queue ⇏ لمعرفة قآئمة التشغيل
+${prefix}q ⇏ لمعرفة قآئمة التشغيل
  `)
    message.channel.sendEmbed(embed)
    
